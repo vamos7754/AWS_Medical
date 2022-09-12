@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ML API</title>
+    </head>
+    <body>
+    <div>
+        <h1>Insurance Charges Prediction ML Algorithm</h1>
+        <form method="POST", action = "{{url_for('predict')}}">
+            <label for="age">AGE</label>
+            <p><input type = "text" name="age" placeholder="age"></p>
+            <br><br>
+            <label for="sex">SEX</label>
+            <p><input type = "text" name="sex" placeholder="sex"></p>
+            <br><br>
+            <label for="bmi">BMI</label>
+            <p><input type = "text" name="bmi" placeholder="bmi"></p>
+            <br><br>
+            <label for="children">Children</label>
+            <p><input type = "text" name="children" placeholder="children"></p>
+            <br><br>
+            <label for="smoker">Smoker</label>
+            <p><input type = "text" name="smoker" placeholder="smoker"></p>
+            <br><br>
+            <label for="region">Region</label>
+            <p><input type = "text" name="region" placeholder="region"></p>
+            <br><br>
+            <input type="submit" value="predict" onclick="predict()">
+        </form>
+    </div>
+    </body>
+</html>
